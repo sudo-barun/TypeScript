@@ -9186,7 +9186,7 @@ export function getJSXImplicitImportBase(compilerOptions: CompilerOptions, file?
 
 /** @internal */
 export function getJSXRuntimeImport(base: string | undefined, options: CompilerOptions) {
-    return base ? `${base}/${options.jsx === JsxEmit.ReactJSXDev ? "jsx-dev-runtime" : "jsx-runtime"}` : undefined;
+    return base ? `${base}/${options.jsx === JsxEmit.ReactJSXDev ? "jsx-dev-runtime" : "jsx-runtime"}.js` : undefined;
 }
 
 /** @internal */
